@@ -20,7 +20,7 @@ import PlayProject._
 
 object ApplicationBuild extends Build {
 
-    val appName         = "mama"
+    val appName         = "play-spring"
     val appVersion      = "1.0-SNAPSHOT"
 
     val appDependencies = Seq(
