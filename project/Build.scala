@@ -11,7 +11,11 @@ object ApplicationBuild extends Build {
       "org.springframework" % "spring-context" % "3.2.3.RELEASE"
     )
 
-    val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
+    val main = play.Project(appName, appVersion, appDependencies).settings(
+	// Add your own project settings here
+	//    templatesImport += "com.abc.backend._"
+	//    templatesImport += "views.components._"
+
       // Add your own project settings here      
     )
 
