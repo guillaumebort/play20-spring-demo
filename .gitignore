@@ -1,3 +1,5 @@
+# Temporary files
+*~
 logs
 project/project
 project/target
@@ -11,4 +13,5 @@ dist
 /.idea_modules
 /.classpath
 /.project
+/.settings
 /RUNNING_PID
