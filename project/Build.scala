@@ -1,6 +1,6 @@
 import sbt._
-import Keys._
-import PlayProject._
+import play.Project._
+import sbt.Keys._
 
 object ApplicationBuild extends Build {
 
@@ -8,10 +8,10 @@ object ApplicationBuild extends Build {
     val appVersion      = "1.0-SNAPSHOT"
 
     val appDependencies = Seq(
-      "org.springframework" % "spring-context" % "3.0.7.RELEASE"
+      "org.springframework" % "spring-context" % "4.0.0.RELEASE"
     )
 
-    val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
+    val main = play.Project(appName, appVersion, appDependencies).settings(
       // Add your own project settings here      
     )
 
